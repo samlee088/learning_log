@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.contrib.auth.decorators import login_required
 
 from .models import Topic, Entry
 from .forms import TopicForm, EntryForm
@@ -21,6 +22,7 @@ def topic(request, topic_id):
     context = {'topic': topic, 'entries': entries}
     return render(request, 'learning_logs/topic.html', context)
 
+@login_required
 def new_topic(request):
     """Add a new topic."""
     if request.method != "POST":
