@@ -21,4 +21,4 @@ def register(request):
         
     # Display a blank or invalid form.
     context = {'form': form}
-    return render(request, 'registration.html', context)
+    return render(request, 'registration/registration.html', context)
