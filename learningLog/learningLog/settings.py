@@ -34,6 +34,10 @@ INSTALLED_APPS = [
     # My Apps
     'learning_logs',
     'accounts',
+
+    # Third party apps
+    'django_bootstrap5',
+    
     # Default Django apps
     'django.contrib.admin',
     'django.contrib.auth',
@@ -42,6 +46,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
